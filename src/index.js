@@ -1,13 +1,14 @@
 import _ from 'lodash';
+import './assets/scss/style.scss';
+import Routing from './assets/js/Routing';
 
 
-function component() {
-    const element = document.createElement('div');
-  
-    // Lodash, imported by this script
-    element.innerHTML = _.join(['Hey', 'webpack'], ' ');
-  
-    return element;
+const App = () => {
+    Routing('/subscription')
 }
 
-document.body.appendChild(component());
+
+// DOM Load
+window.addEventListener('DOMContentLoaded', (event) => {
+    App();
+})
