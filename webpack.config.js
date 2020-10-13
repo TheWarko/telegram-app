@@ -30,6 +30,10 @@ module.exports = {
                   'css-loader',     // Translates CSS into CommonJS
                   'sass-loader',    // Compiles Sass to CSS
                 ],
+            },
+            {
+                test: /\.(woff|woff2|ttf|eot)$/,
+                use: 'file-loader?name=fonts/[name].[ext]!static'
             }
         ]
     }

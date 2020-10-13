@@ -1,3 +1,29 @@
-div{
-    color: red;
+* {
+    box-sizing: border-box;
 }
+body{
+    margin: 0;
+    border: 0 none;
+    padding: 0;
+    outline: 0 none;
+}
+
+// @font-face {
+//     font-family: sf_pro_displayregular;
+//     src: url(../fonts/sfprodisplay-regular-webfont.woff2) format(woff2),
+//          url(../fonts/sfprodisplay-regular-webfont.woff) format(woff);
+//     font-weight: normal;
+//     font-style: normal;
+// }
+
+.main{
+    background-color: #000;
+    color: #fff;
+    width: 100%;
+    min-height: 100vh;
+    text-align: center;
+    font-family: SF Pro Display;
+    font-size: 16px;
+    line-height: 20px;
+}
+
