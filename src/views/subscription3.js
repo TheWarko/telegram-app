@@ -7,13 +7,13 @@ const subscription3 = `
             <nav>
                 <div class="header__container" >
                     <div id="header__left" class="header__left" >
-                        <span class="back" ><a href="javascript:void(0);" onclick="Routing('#subscription2')" >Back</a></span>                    
+                        <span class="back" ><a href="javascript:void(0);" onclick="Routing('#subscription2','back')" >Back</a></span>                    
                     </div> 
                     <div id="header__center" class="header__center" >
                         <span></span>
                     </div> 
                     <div id="header__right" class="header__right" >
-                        <span class="hidden" ><a href="javascript:void(0);" >Next</a></span>
+                        <span class="hidden" ><a href="javascript:void(0);" onclick="Routing('#contacts')" >Next</a></span>
                     </div> 
                 </div>
             </nav>

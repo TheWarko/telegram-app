@@ -7,7 +7,7 @@ const subscription2 = `
             <nav>
                 <div class="header__container" >
                     <div id="header__left" class="header__left" >
-                        <span class="back" ><a href="javascript:void(0);" onclick="Routing('#subscription')" >Back</a></span>                    
+                        <span class="back" ><a href="javascript:void(0);" onclick="Routing('#subscription','back')" >Back</a></span>                    
                     </div> 
                     <div id="header__center" class="header__center" >
                         <span></span>
