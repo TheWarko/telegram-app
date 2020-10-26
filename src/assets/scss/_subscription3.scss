@@ -1,0 +1,21 @@
+.subscription3{
+    &__container{
+        padding: 8px;
+    }
+    &__title{
+        padding-top: 8vh;
+    }
+    &__text{
+        max-width: 300px;
+        margin: 0 auto;
+        margin-bottom: 64px;
+    }
+    &__form{
+    }
+    &__message{
+        display: block;
+        margin-top: 40px;
+        text-decoration: none;
+        color: $text-color;
+    }
+}

@@ -23,6 +23,10 @@ module.exports = {
                     }
                 }
             },
+            { 
+                test: /\.(png|woff|woff2|eot|ttf|svg)$/, 
+                loader: 'url-loader?limit=100000' 
+            },
             {
                 test: /\.s[ac]ss$/i,
                 use: [
@@ -31,10 +35,6 @@ module.exports = {
                   'sass-loader',    // Compiles Sass to CSS
                 ],
             },
-            {
-                test: /\.(woff|woff2|ttf|eot)$/,
-                use: 'file-loader?name=fonts/[name].[ext]!static'
-            }
         ]
     }
 };

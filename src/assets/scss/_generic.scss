@@ -1,6 +1,7 @@
 * {
     box-sizing: border-box;
 }
+
 body{
     margin: 0;
     border: 0 none;
@@ -8,13 +9,18 @@ body{
     outline: 0 none;
 }
 
+
+$text-color: #fff;
+
+
 // @font-face {
-//     font-family: sf_pro_displayregular;
-//     src: url(../fonts/sfprodisplay-regular-webfont.woff2) format(woff2),
-//          url(../fonts/sfprodisplay-regular-webfont.woff) format(woff);
+//     font-family: 'sf_pro_displayregular';
+//     src: url('./assets/fonts/sfprodisplay-regular-webfont.woff2') format('woff2'),
+//          url('./assets/fonts/sfprodisplay-regular-webfont.woff') format('woff');
 //     font-weight: normal;
 //     font-style: normal;
 // }
+
 
 .main{
     background-color: #000;
@@ -22,8 +28,11 @@ body{
     width: 100%;
     min-height: 100vh;
     text-align: center;
-    font-family: SF Pro Display;
+    font-family: 'sf_pro_displayregular', Arial;
     font-size: 16px;
     line-height: 20px;
 }
 
+.text-center{ text-align: center; }
+.text-left{ text-align: left; }
+.text-right{ text-align: right; }
