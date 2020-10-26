@@ -23,6 +23,10 @@ module.exports = {
                     }
                 }
             },
+            { 
+                test: /\.(png|woff|woff2|eot|ttf|svg)$/, 
+                loader: 'url-loader?limit=100000' 
+            },
             {
                 test: /\.s[ac]ss$/i,
                 use: [
@@ -30,7 +34,7 @@ module.exports = {
                   'css-loader',     // Translates CSS into CommonJS
                   'sass-loader',    // Compiles Sass to CSS
                 ],
-            }
+            },
         ]
     }
 };

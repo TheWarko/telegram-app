@@ -1,0 +1,13 @@
+.subscription{
+    &__container{
+        padding: 8px;
+    }
+    &__title{
+        padding-top: 8vh;
+    }
+    &__text{
+        max-width: 260px;
+        margin: 0 auto;
+        margin-bottom: 64px;
+    }
+}

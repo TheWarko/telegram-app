@@ -1,0 +1,50 @@
+.header{
+    
+    width: 100%;
+    &__container{
+        height: 40px;
+        display: flex;
+        padding: 8px;
+    }
+
+    &__left,
+    &__center,
+    &__right{
+        padding: 4px;
+        a{
+            color: $text-color;
+            text-decoration: none;
+        }
+        // span{
+        //     display: none;
+        // }
+        // &.visible{
+        //     span{
+        //         display: block;
+        //     }
+        // }
+    }
+    &__left{
+        width: 25%;
+        text-align: left;
+        .back{
+            background: url(/src/assets/icons/arrow.svg) no-repeat;
+            padding-left: 16px;
+            height: 20px;
+            display: block;
+            margin-left: -4px;
+        }
+    }
+    &__center{
+        width: 50%;
+        text-align: center;
+    }
+    &__right{
+        width: 25%;
+        text-align: right;
+    }
+    .hidden{
+        display: none;
+    }
+
+}
