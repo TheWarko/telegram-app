@@ -1,13 +1,13 @@
 import _ from 'lodash';
 import './assets/scss/style.scss';
 import Routing from './assets/js/Routing';
-import Subscription from './assets/js/Subscription';
+import { isMobile } from './assets/js/Utils';
 
 
 
 const App = () => {
-    localStorage.getItem("subscribed") 
-    window.location.hash ? Routing(window.location.hash) : localStorage.getItem("subscribed") ? Routing('#contacts') : Routing('#subscription')
+    window.location.hash ? Routing(window.location.hash) : localStorage.getItem("subscribed") ? Routing('#contacts') : Routing('#subscription');
+    isMobile();
 }
 
 

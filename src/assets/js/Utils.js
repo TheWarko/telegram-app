@@ -4,3 +4,7 @@ export const selectCountryPrefix = (selectTarget,labelTarget) => {
 
     selectCountry.addEventListener('change',(e) => { labelCountry.innerHTML = e.target.value } )
 }
+
+export const isMobile = () => {
+    if(!/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent))  alert("Visit the page from a Mobile Device")
+}
