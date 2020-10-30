@@ -1,8 +1,8 @@
 import navbar from '../views/navbar'
 
 
-const calls = `
-    <div class="calls" >
+const chats = `
+    <div class="chats" >
 
         <header class="header" >
             <div class="header__container" >
@@ -11,7 +11,7 @@ const calls = `
                         <span></span>
                     </div> 
                     <div id="header__center" class="header__center" >
-                        <span><h1>Calls</h1></span>
+                        <span><h1>Chats</h1></span>
                     </div> 
                     <div id="header__right" class="header__right" >
                         <span></span>
@@ -20,16 +20,16 @@ const calls = `
             </div>
         </header>
 
-        <div class="calls__container">
+        <div class="chats__container">
             <div>
-                <p>Hello Calls</p>
+                <p>Hello Chats</p>
             </div>
         </div>
 
-        ${navbar.replace('navbar__calls','navbar__calls active')}
+        ${navbar.replace('navbar__chats','navbar__chats active')}
 
     </div>
 
 `
 
-export default calls
+export default chats

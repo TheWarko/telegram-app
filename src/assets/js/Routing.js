@@ -1,10 +1,12 @@
-import home from '../../views/home'
 import subscription from '../../views/subscription'
 import subscription2 from '../../views/subscription2'
 import subscription3 from '../../views/subscription3'
 import contacts from '../../views/contacts'
 import contact from '../../views/contact'
+import newcontact from '../../views/newcontact'
 import calls from '../../views/calls'
+import chats from '../../views/chats'
+import settings from '../../views/settings'
 
 
 import {selectCountryPrefix} from './Utils';
@@ -13,13 +15,15 @@ import Contacts from './Contacts';
 
 
 const routes = {
-    '#' : home,
     '#subscription' : subscription,
     '#subscription2' : subscription2,
     '#subscription3' : subscription3,
     '#contacts' : contacts,
     '#contact' : contact,
-    '#calls' : calls
+    '#newcontact' : newcontact,
+    '#calls' : calls,
+    '#chats' : chats,
+    '#settings' : settings
 };
 
 const events = (pathname) => {
@@ -78,16 +82,21 @@ const slideView = (selector,navDirection) => {
 
 const Routing = (pathname,navDirection) => {
     const root = document.getElementById('root')
-
-    if (pathname.indexOf('/')>0){
-        let parameter = pathname.substr(pathname.indexOf('/'),pathname.length)
-        pathname = pathname.substr(0,pathname.indexOf('/'))
-        root.innerHTML = routes[pathname]
-        pathname = pathname + parameter
+    
+    if (localStorage.getItem("subscribed") || pathname.includes('#subscription')){
+        if (pathname.indexOf('/')>0){
+            let parameter = pathname.substr(pathname.indexOf('/'),pathname.length)
+            pathname = pathname.substr(0,pathname.indexOf('/'))
+            root.innerHTML = routes[pathname]
+            pathname = pathname + parameter
+        }else{
+            root.innerHTML = routes[pathname]
+        }
+        window.history.pushState({page: pathname.replace('#','')}, pathname.replace('#',''), pathname)
     }else{
-        root.innerHTML = routes[pathname]
+        root.innerHTML = routes['#subscription']
+        window.history.pushState({page: 'subscription'}, 'subscription', '#subscription')
     }
-    window.history.pushState({page: pathname.replace('#','')}, pathname.replace('#',''), pathname)
 
     const main = document.getElementById('main')
     slideView(main,navDirection)

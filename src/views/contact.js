@@ -8,7 +8,7 @@ const contact = `
             <div class="header__container" >
                 <nav>
                     <div id="header__left" class="header__left" >
-                        <span class="back" onclick="Routing('#contacts','back')" >Back</span>
+                        <span class="back" ><a href="javascript:void(0);" onclick="Routing('#contacts','back')" >Back</a></span>                    
                     </div> 
                     <div id="header__center" class="header__center" >
                         <span><h1>Info</h1></span>

@@ -33,8 +33,24 @@ $text-color-2: #828282;
     font-family: 'sf_pro_displayregular', Arial;
     font-size: 16px;
     line-height: 20px;
+    overflow: hidden;
 }
 
 .text-center{ text-align: center; }
 .text-left{ text-align: left; }
 .text-right{ text-align: right; }
+
+
+//If visiting the page on a Desktop, show an alert to the user that says to check the same page from a Mobile Device
+#desktopMessage{
+    display: none;
+}
+@media screen and (min-width: 992px) {
+    #desktopMessage{
+        display: block;
+        padding-top: 40vh;
+    }
+    #root{
+        display: none;
+    }
+}

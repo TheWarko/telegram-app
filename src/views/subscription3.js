@@ -13,7 +13,7 @@ const subscription3 = `
                         <span></span>
                     </div> 
                     <div id="header__right" class="header__right" >
-                        <span class="hidden" ><a href="javascript:void(0);" onclick="Routing('#contacts')" >Next</a></span>
+                        <span class="hidden" ><a href="javascript:void(0);" onclick="Subscription()" >Next</a></span>
                     </div> 
                 </nav>
             </div>

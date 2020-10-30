@@ -14,7 +14,7 @@ const contacts = `
                         <span><h1>Contacts</h1></span>
                     </div> 
                     <div id="header__right" class="header__right" >
-                        <span class="hidden" ><a href="javascript:void(0);" onclick="Routing('newContact')" >+</a></span>
+                        <span class="add" ><a href="javascript:void(0);" onclick="Routing('#newcontact')" >+</a></span>
                     </div> 
                 </nav>
                 <input type="text" class="header__searchbar searchbar" placeholder="Search" >
