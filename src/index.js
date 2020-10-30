@@ -1,6 +1,7 @@
 import _ from 'lodash';
 import './assets/scss/style.scss';
 import Routing from './assets/js/Routing';
+import Subscription from './assets/js/Subscription';
 import { isMobile } from './assets/js/Utils';
 
 
