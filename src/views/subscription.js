@@ -5,8 +5,8 @@ const subscription = `
     <div class="subscription" >
 
         <header class="header" >
-            <nav>
-                <div class="header__container" >
+            <div class="header__container header__container--transparent" >
+                <nav>
                     <div id="header__left" class="header__left" >
                         <span></span>
                     </div> 
@@ -16,8 +16,8 @@ const subscription = `
                     <div id="header__right" class="header__right" >
                         <span class="hidden" ><a href="javascript:void(0);" onclick="Routing('#subscription2')" >Next</a></span>
                     </div> 
-                </div>
-            </nav>
+                </nav>
+            </div>
         </header>
 
         <div class="subscription__container">
@@ -40,8 +40,6 @@ const subscription = `
                 </div>
             </form>
         </div>
-
-        ${navbar}
 
     </div>
 `

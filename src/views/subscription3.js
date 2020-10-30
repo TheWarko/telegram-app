@@ -4,8 +4,8 @@ const subscription3 = `
     <div class="subscription3" >
 
         <header class="header" >
-            <nav>
-                <div class="header__container" >
+            <div class="header__container header__container--transparent" >
+                <nav>
                     <div id="header__left" class="header__left" >
                         <span class="back" ><a href="javascript:void(0);" onclick="Routing('#subscription2','back')" >Back</a></span>                    
                     </div> 
@@ -15,8 +15,8 @@ const subscription3 = `
                     <div id="header__right" class="header__right" >
                         <span class="hidden" ><a href="javascript:void(0);" onclick="Routing('#contacts')" >Next</a></span>
                     </div> 
-                </div>
-            </nav>
+                </nav>
+            </div>
         </header>
 
         <div class="subscription3__container" >
@@ -32,8 +32,6 @@ const subscription3 = `
             <a class="subscription3__message" href="javascript:void(0);">Forgot password?</a>
 
         </div>
-
-        ${navbar}
 
     </div>
 `

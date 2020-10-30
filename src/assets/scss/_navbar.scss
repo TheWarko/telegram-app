@@ -9,5 +9,27 @@
         background-color: #1c1c1c;
         padding: 8px;
     }
+    nav{
+        width: 100%;
+        height: 50px;
+        display: flex;
+        > div{
+            width: 25%;
+            padding-top: 25px;
+            color: $text-color-2;
+            font-size: 10px;
+        }
+        > .active{
+            color: #fff;
+        }
+    }
+    &__contacts{ background: url(/src/assets/icons/contacts.svg) no-repeat center top; }
+    &__contacts.active{ background: url(/src/assets/icons/contacts-active.svg) no-repeat center top; }
+    &__calls{ background: url(/src/assets/icons/calls.svg) no-repeat center top; }
+    &__calls.active{ background: url(/src/assets/icons/calls-active.svg) no-repeat center top; }
+    &__chats{ background: url(/src/assets/icons/chats.svg) no-repeat center top; }
+    &__chats.active{ background: url(/src/assets/icons/chats-active.svg) no-repeat center top; }
+    &__settings{ background: url(/src/assets/icons/settings.svg) no-repeat center top; }
+    &__settings.active{ background: url(/src/assets/icons/settings-active.svg) no-repeat center top; }
 
 }

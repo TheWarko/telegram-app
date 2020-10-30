@@ -5,30 +5,96 @@ const contacts = `
     <div class="contacts" >
 
         <header class="header" >
-            <nav>
-                <div class="header__container" >
+            <div class="header__container" >
+                <nav>
                     <div id="header__left" class="header__left" >
                         <span></span>
                     </div> 
                     <div id="header__center" class="header__center" >
-                        <span></span>
+                        <span><h1>Contacts</h1></span>
                     </div> 
                     <div id="header__right" class="header__right" >
-                        <span class="hidden" ><a href="javascript:void(0);" onclick="Routing('#subscription2')" >Next</a></span>
+                        <span class="hidden" ><a href="javascript:void(0);" onclick="Routing('newContact')" >+</a></span>
                     </div> 
-                </div>
-            </nav>
+                </nav>
+                <input type="text" class="header__searchbar searchbar" placeholder="Search" >
+            </div>
         </header>
 
         <div class="contacts__container">
-            
-        
+            <div class="row">
+                <div class="row__action"></div>
+                <div class="row__image">
+                </div>
+                <div class="row__text">
+                    <p class="row__text__label" >Add people nerby</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="row__action"></div>
+                <div class="row__image">
+                </div>
+                <div class="row__text">
+                    <p class="row__text__label" >Invite friends</p>
+                </div>
+            </div>
+            <div class="row" data-contact="1" >
+                <div class="row__action"></div>
+                <div class="row__image">
+                    <img src="assets/images/contacts/contact2.png" alt="contact1" >
+                </div>
+                <div class="row__text">
+                    <p class="row__text__1" >Lorem ipsum</p>
+                    <p class="row__text__2" >Lorem ipsum dolor</p>
+                </div>
+            </div>
+            <div class="row" data-contact="2">
+                <div class="row__action"></div>
+                <div class="row__image">
+                    <img src="assets/images/contacts/contact1.png" alt="contact1" >
+                </div>
+                <div class="row__text">
+                    <p class="row__text__1" >Lorem ipsum</p>
+                    <p class="row__text__2" >Lorem ipsum dolor</p>
+                </div>
+            </div>
+            <div class="row" data-contact="3">
+                <div class="row__action"></div>
+                <div class="row__image">
+                    <img src="assets/images/contacts/contact2.png" alt="contact1" >
+                </div>
+                <div class="row__text">
+                    <p class="row__text__1" >Lorem ipsum</p>
+                    <p class="row__text__2" >Lorem ipsum dolor sit amet</p>
+                </div>
+            </div>
+            <div class="row" data-contact="4">
+                <div class="row__action"></div>
+                <div class="row__image">
+                    <img src="assets/images/contacts/contact2.png" alt="contact1" >
+                </div>
+                <div class="row__text">
+                    <p class="row__text__1" >Lorem ipsum</p>
+                    <p class="row__text__2" >Lorem lorem ipsum dolor</p>
+                </div>
+            </div>
+            <div class="row" data-contact="5">
+                <div class="row__action"></div>
+                <div class="row__image">
+                    <img src="assets/images/contacts/contact1.png" alt="contact1" >
+                </div>
+                <div class="row__text">
+                    <p class="row__text__1" >Lorem ipsum</p>
+                    <p class="row__text__2" >Lorem ipsum dolor</p>
+                </div>
+            </div>
         </div>
 
-        ${navbar}
+        ${navbar.replace('navbar__contacts','navbar__contacts active')}
 
     </div>
 `
+
 
 export default contacts
 

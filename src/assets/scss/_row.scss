@@ -1,0 +1,47 @@
+.row{
+    display: flex;
+    min-height: 44px;
+    padding: 2px 0;
+    &__action{
+        flex: 0;
+    }
+    &__image{
+        flex: 2;
+        text-align: center;
+        img{
+            width: 40px;
+            height: 40px;
+            border-radius: 50px;
+        }
+    }
+    &__text{
+        flex: 10;
+        text-align: left;
+        padding-right: 6px;
+        // overflow: hidden;
+        // white-space: nowrap;
+        border-bottom: 1px solid #3D3D3F;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        p{
+            margin: 0;
+            padding: 0;
+        }
+        &__label{
+            line-height: 44px;
+            text-transform: capitalize;
+            // max-height: 50%;
+        }
+        &__1{
+            flex: 5;
+            font-size: 17px;
+            text-transform: capitalize;
+        }
+        &__2{
+            flex: 5;
+            font-size: 13px;
+            color: $text-color-2;
+        }
+    }
+}
