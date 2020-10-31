@@ -7,7 +7,7 @@ import { isMobile } from './assets/js/Utils';
 
 
 const App = () => {
-    window.location.hash ? Routing(window.location.hash) : localStorage.getItem("subscribed") ? Routing('#contacts') : Routing('#subscription');
+    window.location.hash ? Routing(window.location.hash,null,true) : localStorage.getItem("subscribed") ? Routing('#contacts',null,true) : Routing('#subscription',null,true);
     isMobile();
 }
 

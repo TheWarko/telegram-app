@@ -80,7 +80,7 @@ const slideView = (selector,navDirection) => {
 } 
 
 
-const Routing = (pathname,navDirection) => {
+const Routing = (pathname, navDirection, noeffect) => {
     const root = document.getElementById('root')
     
     if (localStorage.getItem("subscribed") || pathname.includes('#subscription')){
@@ -99,7 +99,7 @@ const Routing = (pathname,navDirection) => {
     }
 
     const main = document.getElementById('main')
-    slideView(main,navDirection)
+    if (!noeffect) slideView(main,navDirection)
     events(pathname)
 }
 window.Routing = Routing
