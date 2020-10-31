@@ -1,4 +1,8 @@
 const path = require('path');
+const CompressionPlugin = require('compression-webpack-plugin');
+
+
+
 
 module.exports = {
     mode: "production",
@@ -8,9 +12,17 @@ module.exports = {
         contentBase: './dist',
     },
     output: {
-        filename: 'main.js',
+        // filename: 'main.js',
+        filename: '[name].[contenthash].js',
         path: path.resolve(__dirname, 'dist'),
     },
+    plugins: [
+        new CompressionPlugin({
+            filename: "[path].gz[query]",
+            algorithm: "gzip",
+            test: /\.(js|css|html|svg)$/
+        })
+    ],
     module: {
         rules: [
             {

@@ -88,10 +88,111 @@ const contacts = `
                     <p class="row__text__2" >Lorem ipsum dolor</p>
                 </div>
             </div>
+            <div class="row" data-contact="6" >
+                <div class="row__action"></div>
+                <div class="row__image">
+                    <img src="assets/images/contacts/contact2.png" alt="contact1" >
+                </div>
+                <div class="row__text">
+                    <p class="row__text__1" >Lorem ipsum</p>
+                    <p class="row__text__2" >Lorem ipsum dolor</p>
+                </div>
+            </div>
+            <div class="row" data-contact="7">
+                <div class="row__action"></div>
+                <div class="row__image">
+                    <img src="assets/images/contacts/contact1.png" alt="contact1" >
+                </div>
+                <div class="row__text">
+                    <p class="row__text__1" >Lorem ipsum</p>
+                    <p class="row__text__2" >Lorem ipsum dolor</p>
+                </div>
+            </div>
+            <div class="row" data-contact="8">
+                <div class="row__action"></div>
+                <div class="row__image">
+                    <img src="assets/images/contacts/contact2.png" alt="contact1" >
+                </div>
+                <div class="row__text">
+                    <p class="row__text__1" >Lorem ipsum</p>
+                    <p class="row__text__2" >Lorem ipsum dolor sit amet</p>
+                </div>
+            </div>
+            <div class="row" data-contact="9">
+                <div class="row__action"></div>
+                <div class="row__image">
+                    <img src="assets/images/contacts/contact2.png" alt="contact1" >
+                </div>
+                <div class="row__text">
+                    <p class="row__text__1" >Lorem ipsum</p>
+                    <p class="row__text__2" >Lorem lorem ipsum dolor</p>
+                </div>
+            </div>
+            <div class="row" data-contact="10">
+                <div class="row__action"></div>
+                <div class="row__image">
+                    <img src="assets/images/contacts/contact1.png" alt="contact1" >
+                </div>
+                <div class="row__text">
+                    <p class="row__text__1" >Lorem ipsum</p>
+                    <p class="row__text__2" >Lorem ipsum dolor</p>
+                </div>
+            </div>
+            <div class="row" data-contact="11" >
+                <div class="row__action"></div>
+                <div class="row__image">
+                    <img src="assets/images/contacts/contact2.png" alt="contact1" >
+                </div>
+                <div class="row__text">
+                    <p class="row__text__1" >Lorem ipsum</p>
+                    <p class="row__text__2" >Lorem ipsum dolor</p>
+                </div>
+            </div>
+            <div class="row" data-contact="12">
+                <div class="row__action"></div>
+                <div class="row__image">
+                    <img src="assets/images/contacts/contact1.png" alt="contact1" >
+                </div>
+                <div class="row__text">
+                    <p class="row__text__1" >Lorem ipsum</p>
+                    <p class="row__text__2" >Lorem ipsum dolor</p>
+                </div>
+            </div>
+            <div class="row" data-contact="13">
+                <div class="row__action"></div>
+                <div class="row__image">
+                    <img src="assets/images/contacts/contact2.png" alt="contact1" >
+                </div>
+                <div class="row__text">
+                    <p class="row__text__1" >Lorem ipsum</p>
+                    <p class="row__text__2" >Lorem ipsum dolor sit amet</p>
+                </div>
+            </div>
+            <div class="row" data-contact="14">
+                <div class="row__action"></div>
+                <div class="row__image">
+                    <img src="assets/images/contacts/contact2.png" alt="contact1" >
+                </div>
+                <div class="row__text">
+                    <p class="row__text__1" >Lorem ipsum</p>
+                    <p class="row__text__2" >Lorem lorem ipsum dolor</p>
+                </div>
+            </div>
+            <div class="row" data-contact="15">
+                <div class="row__action"></div>
+                <div class="row__image">
+                    <img src="assets/images/contacts/contact1.png" alt="contact1" >
+                </div>
+                <div class="row__text">
+                    <p class="row__text__1" >Lorem ipsum</p>
+                    <p class="row__text__2" >Lorem ipsum dolor</p>
+                </div>
+            </div>
         </div>
 
         ${navbar.replace('navbar__contacts','navbar__contacts active')}
 
+        
     </div>
 `
 

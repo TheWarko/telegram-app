@@ -1,4 +1,3 @@
-// creare la gestione dell'evento click su .contact nella pagina contatti
 
 const Contacts = () => {
 
