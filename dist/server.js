@@ -875,7 +875,7 @@ eval("/*!\n * vary\n * Copyright(c) 2014-2017 Douglas Christopher Wilson\n * MIT
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("const server = __webpack_require__(/*! http */ \"http\").createServer();\nconst io = __webpack_require__(/*! socket.io */ \"./node_modules/socket.io/dist/index.js\")(server, {\n  cors: {\n    allowedHeaders: ['Content-Type, Authorization, Content-Length, X-Requested-With']\n  }\n});\n\nconst port = process.env.PORT || 3000;\nserver.listen(port);\nio.sockets.on('connect', onConnect);\n\nfunction onConnect(socket){\n\n    socket.on('message', function(msg) {\n      socket.emit('messages',msg)\n      socket.broadcast.emit('messages',msg)\n    });\n\n}\n\n\n\n//# sourceURL=webpack:///./src/server.js?");
+eval("const server = __webpack_require__(/*! http */ \"http\").createServer();\nconst io = __webpack_require__(/*! socket.io */ \"./node_modules/socket.io/dist/index.js\")(server, {\n  cors: {\n    allowedHeaders: ['Content-Type, Authorization, Content-Length, X-Requested-With']\n  }\n});\n\nconst port = process.env.PORT || 3000;\nserver.listen(port);\nio.sockets.on('connect', onConnect);\n\nlet msgs = []\n\nfunction onConnect(socket){\n\n    socket.emit('load',msgs)\n    socket.on('message', function(msg) {\n      socket.emit('messages',msg)\n      socket.broadcast.emit('messages',msg)\n      msgs.push(msg)\n    });\n\n}\n\n\n\n//# sourceURL=webpack:///./src/server.js?");
 
 /***/ }),
 
