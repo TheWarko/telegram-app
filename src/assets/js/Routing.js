@@ -6,12 +6,16 @@ import contact from '../../views/contact'
 import newcontact from '../../views/newcontact'
 import calls from '../../views/calls'
 import chats from '../../views/chats'
+import chat from '../../views/chat'
 import settings from '../../views/settings'
 
 
 import {selectCountryPrefix} from './Utils';
 import Form from './Form';
 import Contacts from './Contacts';
+import Chats from './Chats';
+import Io from './Io';
+
 
 
 const routes = {
@@ -23,6 +27,7 @@ const routes = {
     '#newcontact' : newcontact,
     '#calls' : calls,
     '#chats' : chats,
+    '#chat' : chat,
     '#settings' : settings
 };
 
@@ -40,6 +45,12 @@ const events = (pathname) => {
             break;
         case '#contacts':
             Contacts()
+            break;
+        case '#chats':
+            Chats()
+            break;
+        case '#chat':
+            Io()
             break;
         default:
             break;
@@ -81,26 +92,33 @@ const slideView = (selector,navDirection) => {
 
 
 const Routing = (pathname, navDirection, noeffect) => {
+
+    let parameter = ''
+    let pathnameWithoutParameter = ''
     const root = document.getElementById('root')
+    const main = document.getElementById('main')
+
+    //Check if pathname have parameters and manage them
+    if (pathname.indexOf('/')>0){
+        parameter = pathname.substr(pathname.indexOf('/'),pathname.length)
+        pathnameWithoutParameter = pathname.substr(0,pathname.indexOf('/'))
+    }else{
+        pathnameWithoutParameter = pathname
+    }
     
+    //Check if user is registered, else route to subscription
     if (localStorage.getItem("subscribed") || pathname.includes('#subscription')){
-        if (pathname.indexOf('/')>0){
-            let parameter = pathname.substr(pathname.indexOf('/'),pathname.length)
-            pathname = pathname.substr(0,pathname.indexOf('/'))
-            root.innerHTML = routes[pathname]
-            pathname = pathname + parameter
-        }else{
-            root.innerHTML = routes[pathname]
-        }
+        root.innerHTML = routes[pathnameWithoutParameter]
         window.history.pushState({page: pathname.replace('#','')}, pathname.replace('#',''), pathname)
     }else{
         root.innerHTML = routes['#subscription']
         window.history.pushState({page: 'subscription'}, 'subscription', '#subscription')
     }
 
-    const main = document.getElementById('main')
+    //Add animation to routing
     if (!noeffect) slideView(main,navDirection)
-    events(pathname)
+    events(pathnameWithoutParameter)
+
 }
 window.Routing = Routing
 
