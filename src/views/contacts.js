@@ -23,7 +23,7 @@ const contacts = `
 
         <div class="contacts__container">
             <div class="row">
-                <div class="row__action"></div>
+                <div class="row__actionLeft"></div>
                 <div class="row__image">
                 </div>
                 <div class="row__text">
@@ -31,7 +31,7 @@ const contacts = `
                 </div>
             </div>
             <div class="row">
-                <div class="row__action"></div>
+                <div class="row__actionLeft"></div>
                 <div class="row__image">
                 </div>
                 <div class="row__text">
@@ -39,7 +39,7 @@ const contacts = `
                 </div>
             </div>
             <div class="row" data-contact="1" >
-                <div class="row__action"></div>
+                <div class="row__actionLeft"></div>
                 <div class="row__image">
                     <img src="assets/images/contacts/contact2.png" alt="contact1" >
                 </div>
@@ -49,7 +49,7 @@ const contacts = `
                 </div>
             </div>
             <div class="row" data-contact="2">
-                <div class="row__action"></div>
+                <div class="row__actionLeft"></div>
                 <div class="row__image">
                     <img src="assets/images/contacts/contact1.png" alt="contact1" >
                 </div>
@@ -59,7 +59,7 @@ const contacts = `
                 </div>
             </div>
             <div class="row" data-contact="3">
-                <div class="row__action"></div>
+                <div class="row__actionLeft"></div>
                 <div class="row__image">
                     <img src="assets/images/contacts/contact2.png" alt="contact1" >
                 </div>
@@ -69,7 +69,7 @@ const contacts = `
                 </div>
             </div>
             <div class="row" data-contact="4">
-                <div class="row__action"></div>
+                <div class="row__actionLeft"></div>
                 <div class="row__image">
                     <img src="assets/images/contacts/contact2.png" alt="contact1" >
                 </div>
@@ -79,7 +79,7 @@ const contacts = `
                 </div>
             </div>
             <div class="row" data-contact="5">
-                <div class="row__action"></div>
+                <div class="row__actionLeft"></div>
                 <div class="row__image">
                     <img src="assets/images/contacts/contact1.png" alt="contact1" >
                 </div>
@@ -89,7 +89,7 @@ const contacts = `
                 </div>
             </div>
             <div class="row" data-contact="6" >
-                <div class="row__action"></div>
+                <div class="row__actionLeft"></div>
                 <div class="row__image">
                     <img src="assets/images/contacts/contact2.png" alt="contact1" >
                 </div>
@@ -99,7 +99,7 @@ const contacts = `
                 </div>
             </div>
             <div class="row" data-contact="7">
-                <div class="row__action"></div>
+                <div class="row__actionLeft"></div>
                 <div class="row__image">
                     <img src="assets/images/contacts/contact1.png" alt="contact1" >
                 </div>
@@ -109,7 +109,7 @@ const contacts = `
                 </div>
             </div>
             <div class="row" data-contact="8">
-                <div class="row__action"></div>
+                <div class="row__actionLeft"></div>
                 <div class="row__image">
                     <img src="assets/images/contacts/contact2.png" alt="contact1" >
                 </div>
@@ -119,7 +119,7 @@ const contacts = `
                 </div>
             </div>
             <div class="row" data-contact="9">
-                <div class="row__action"></div>
+                <div class="row__actionLeft"></div>
                 <div class="row__image">
                     <img src="assets/images/contacts/contact2.png" alt="contact1" >
                 </div>
@@ -129,7 +129,7 @@ const contacts = `
                 </div>
             </div>
             <div class="row" data-contact="10">
-                <div class="row__action"></div>
+                <div class="row__actionLeft"></div>
                 <div class="row__image">
                     <img src="assets/images/contacts/contact1.png" alt="contact1" >
                 </div>
@@ -139,7 +139,7 @@ const contacts = `
                 </div>
             </div>
             <div class="row" data-contact="11" >
-                <div class="row__action"></div>
+                <div class="row__actionLeft"></div>
                 <div class="row__image">
                     <img src="assets/images/contacts/contact2.png" alt="contact1" >
                 </div>
@@ -149,7 +149,7 @@ const contacts = `
                 </div>
             </div>
             <div class="row" data-contact="12">
-                <div class="row__action"></div>
+                <div class="row__actionLeft"></div>
                 <div class="row__image">
                     <img src="assets/images/contacts/contact1.png" alt="contact1" >
                 </div>
@@ -159,7 +159,7 @@ const contacts = `
                 </div>
             </div>
             <div class="row" data-contact="13">
-                <div class="row__action"></div>
+                <div class="row__actionLeft"></div>
                 <div class="row__image">
                     <img src="assets/images/contacts/contact2.png" alt="contact1" >
                 </div>
@@ -169,7 +169,7 @@ const contacts = `
                 </div>
             </div>
             <div class="row" data-contact="14">
-                <div class="row__action"></div>
+                <div class="row__actionLeft"></div>
                 <div class="row__image">
                     <img src="assets/images/contacts/contact2.png" alt="contact1" >
                 </div>
@@ -179,7 +179,7 @@ const contacts = `
                 </div>
             </div>
             <div class="row" data-contact="15">
-                <div class="row__action"></div>
+                <div class="row__actionLeft"></div>
                 <div class="row__image">
                     <img src="assets/images/contacts/contact1.png" alt="contact1" >
                 </div>
