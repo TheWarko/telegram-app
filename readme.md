@@ -22,11 +22,11 @@ A dojo to improve my inner javascript
 `npm run buildAll`
 
 ### Build watch
-The project have to configuration, one for server and one for client. The commands below runs both. \
+The project has two different webpack configuration, one for server and one for client. The commands below runs both. \
 `npm run watchAll`
 
 ### Start
-The project have to configuration, one for server and one for client. The commands below runs both. \
+The project has two different webpack configuration, one for server and one for client. The commands below runs both. \
 `npm run startAll`
 
 ### Test with browsersync
