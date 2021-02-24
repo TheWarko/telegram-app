@@ -21,7 +21,7 @@ const contacts = `
             </div>
         </header>
 
-        <div class="contacts__container">
+        <div id="contacts__container" class="contacts__container">
             <div class="row">
                 <div class="row__actionLeft"></div>
                 <div class="row__image">
@@ -38,7 +38,7 @@ const contacts = `
                     <p class="row__text__label" >Invite friends</p>
                 </div>
             </div>
-            <div class="row" data-contact="1" >
+            <!-- <div class="row" data-contact="1" >
                 <div class="row__actionLeft"></div>
                 <div class="row__image">
                     <img src="assets/images/contacts/contact2.png" alt="contact1" >
@@ -187,7 +187,7 @@ const contacts = `
                     <p class="row__text__1" >Lorem ipsum</p>
                     <p class="row__text__2" >Lorem ipsum dolor</p>
                 </div>
-            </div>
+            </div> -->
         </div>
 
         ${navbar.replace('navbar__contacts','navbar__contacts active')}
