@@ -3,7 +3,7 @@
 ## A dojo to improve your inner javascript
 The project have to configuration, one for server and one for client. The commands below runs both.
 
-![](https://github.com/TheWarko/weekendfly/blob/master/dist/preview.gif) 
+![](https://github.com/TheWarko/telegram-app/blob/master/dist/preview.gif) 
 
 ## Technologies
 * Javascript ES6+
