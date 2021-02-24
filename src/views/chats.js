@@ -21,8 +21,15 @@ const chats = `
         </header>
 
         <div class="chats__container">
-            <div>
-                <p>Hello Chats</p>
+            <div class="row" data-chat="1" >
+                <div class="row__actionLeft"></div>
+                <div class="row__image">
+                    <img src="assets/images/contacts/contact2.png" alt="contact1" >
+                </div>
+                <div class="row__text">
+                    <p class="row__text__1" >Lorem ipsum</p>
+                    <p class="row__text__2" >Lorem ipsum dolor</p>
+                </div>
             </div>
         </div>
 

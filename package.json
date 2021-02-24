@@ -6,12 +6,15 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack",
+    "buildAll": "webpack --config webpack.server.config.js & webpack --config webpack.config.js",
     "watch": "webpack --watch",
+    "watchAll": "webpack --watch --config webpack.server.config.js & webpack --watch --config webpack.config.js",
     "start": "webpack-dev-server --open",
+    "startAll": "webpack-dev-server --open & node dist/server.js",
     "browsersync": "browser-sync start --server ./dist"
   },
   "keywords": [],
-  "author": "MS",
+  "author": "Marco Savastio",
   "license": "ISC",
   "devDependencies": {
     "@babel/core": "^7.11.6",
@@ -31,6 +34,12 @@
     "webpack-dev-server": "^3.11.0"
   },
   "dependencies": {
-    "lodash": "^4.17.20"
+    "express": "^4.17.1",
+    "firebase": "^8.0.2",
+    "lodash": "^4.17.20",
+    "socket.io": "^3.0.1",
+    "socket.io-client": "^3.0.1",
+    "transform-loader": "^0.2.4",
+    "webpack-node-externals": "^2.5.2"
   }
 }

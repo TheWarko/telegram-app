@@ -2,7 +2,10 @@
     display: flex;
     min-height: 44px;
     padding: 2px 0;
-    &__action{
+    &__actionLeft{
+        flex: 0;
+    }
+    &__actionRight{
         flex: 0;
     }
     &__image{
