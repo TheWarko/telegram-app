@@ -1,7 +1,6 @@
 # Telegram App
 
-## A dojo to improve your inner javascript
-The project have to configuration, one for server and one for client. The commands below runs both.
+A dojo to improve my inner javascript
 
 ![](https://github.com/TheWarko/telegram-app/blob/master/dist/preview.gif) 
 
@@ -17,16 +16,18 @@ The project have to configuration, one for server and one for client. The comman
 <br />
 
 ### Install
-npm run install
+`npm run install`
 
 ### Build
-npm run buildAll
+`npm run buildAll`
 
 ### Build watch
-npm run watchAll
+The project have to configuration, one for server and one for client. The commands below runs both. \
+`npm run watchAll`
 
 ### Start
-npm run startAll
+The project have to configuration, one for server and one for client. The commands below runs both. \
+`npm run startAll`
 
 ### Test with browsersync
-browsersync
+`browsersync`
